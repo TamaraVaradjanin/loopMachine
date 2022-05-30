@@ -29,7 +29,7 @@ function Player(): React.ReactElement {
 
   useEffect(() => {
     if (!hasSelectedItems) dispatch(toggleIsPlayingAction(false));
-  }, [hasSelectedItems]);
+  }, [hasSelectedItems, dispatch]);
 
   return (
     <Box
