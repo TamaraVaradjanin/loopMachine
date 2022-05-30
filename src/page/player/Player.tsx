@@ -27,6 +27,10 @@ function Player(): React.ReactElement {
     dispatch(setAudios(songs));
   }, [dispatch]);
 
+  useEffect(() => {
+    if (!hasSelectedItems) dispatch(toggleIsPlayingAction(false));
+  }, [hasSelectedItems]);
+
   return (
     <Box
       h="100vh"
