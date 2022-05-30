@@ -11,3 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.particles-bg-canvas-self { z-index: 100 !important; }
